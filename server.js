@@ -1,10 +1,3 @@
-// server.js
-//
-// Setup
-// - In phpPgAdmin, execute the following queries on Namecheap:
-//       GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE posts TO swtec_publisher_user;
-//       GRANT USAGE, SELECT ON SEQUENCE posts_id_seq TO swtec_publisher_user;
-
 const express = require('express');
 const { Pool } = require('pg');
 
