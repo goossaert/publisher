@@ -12,7 +12,7 @@ To use the application:
 
 Below are the SQL statements you should run on your Postgres database before you start using the application. The first query creates the table, and the next two queries grant the proper privileges to your user. Replace `your_user_name` with the user name.
 
-`
+```
 -- Create the "posts" table with the required columns.
 CREATE TABLE posts (
   id SERIAL PRIMARY KEY,
@@ -26,4 +26,4 @@ GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE posts TO your_user_name;
 
 -- Grant privileges on the auto-created sequence.
 GRANT USAGE, SELECT ON SEQUENCE posts_id_seq TO your_user_name;
-`
+```
